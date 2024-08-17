@@ -13,7 +13,7 @@ This is the frontend repository for FilterMart, a single-page e-commerce website
 
 ## Tech Stack
 - Frontend: React, React Router, TailwindCSS, DaisyUI
-- Backend: Firebase Authentication, Mongodb, imgbb API for image uploads
+- Backend: Firebase Authentication, Mongodb
 
 ## Live URL
 - https://filter-mart.web.app/
