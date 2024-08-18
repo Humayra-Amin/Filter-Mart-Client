@@ -123,20 +123,20 @@ const ProductList = () => {
                         </ul>
                     </div> */}
                 </div>
-                {/* sorting */}
+                
+               {/* Sorting */}
                 <div className="ml-6 lg:mr-56 lg:ml-0">
-                    {/* <select onChange={handleSortChange} value={sort} name='sort' id='sort' className='border-blue-400 border-2 p-2 rounded-lg'>
+                    <select onChange={handleSortChange} value={sort} name='sort' id='sort' className='border-blue-400 border-2 p-2 rounded-lg'>
                         <option value='price-asc'>Price Range Low to High</option>
                         <option value='price-desc'>Price Range High to Low</option>
                         <option value='date-desc'>Newest first</option>
-                    </select> */}
-                    {/* reset button */}
-                    {/* <button
+                    </select>
+                    <button
                         onClick={handleReset}
-                        className="btn ml-4 md:ml-4 lg:ml-4 mt-2 md:mt-0 lg:mt-0 border-blue-400 bg-blue-400 text-white">Clear</button> */}
+                        className="btn ml-4 md:ml-4 lg:ml-4 mt-2 md:mt-0 lg:mt-0 border-blue-400 bg-blue-400 text-white">Clear</button>
                 </div>
             </div>
-            {/* product cards */}
+          
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {loading ? (
                     <p>Loading...</p>
@@ -148,7 +148,7 @@ const ProductList = () => {
                     <p>No products found</p>
                 )}
             </div>
-            
+
             {/* Pagination part */}
             <div className='flex justify-center mt-12'>
               
