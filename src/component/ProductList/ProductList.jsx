@@ -83,18 +83,20 @@ const ProductList = () => {
 
     return (
         <div className="container mx-auto">
-            {/* search input */}
+           
+           {/* Searching */}
             <div className="mt-8">
                 <form onSubmit={handleSearch} className="flex products-center ml-[18px] lg:ml-[570px]">
                     <input name="search" type="text" placeholder="Search Product..." className="input input-bordered w-full max-w-xs rounded-tr-none rounded-br-none" />
                     <input className="btn bg-blue-400 text-white rounded-tl-none rounded-bl-none hover:bg-blue-500" type="submit" value="Search" />
                 </form>
             </div>
-            {/* filter */}
+
+           {/* Categorization */}
             <div className="md:flex justify-between products-center space-y-2 ml-6 lg:ml-40">
                 <div className="mt-4">
-                    {/* brand filter */}
-                    {/* <div className="dropdown">
+
+                    <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn m-1 border-2 border-blue-400 bg-blue-400 text-white hover:bg-blue-500 hover:border-blue-500">
                             {selectedBrand}
                         </div>
@@ -103,27 +105,27 @@ const ProductList = () => {
                                 <li key={brand}><a onClick={() => handleFilterChange(setBrandFilter, brand, 'Brand')}>{brand}</a></li>
                             ))}
                         </ul>
-                    </div> */}
-                    {/* category filter */}
-                    {/* <div className="dropdown">
+                    </div>
+
+                    <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn m-1 border-2 border-blue-400 bg-blue-400 text-white hover:bg-blue-500 hover:border-blue-500">{selectedCategory}</div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                             {["Pens", "Pencils", "Notebooks", "Erasers", "Highlighters", "Markers"].map((category) => (
                                 <li key={category}><a onClick={() => handleFilterChange(setCategoryFilter, category, 'Category')}>{category}</a></li>
                             ))}
                         </ul>
-                    </div> */}
-                    {/* price range filter */}
-                    {/* <div className="dropdown">
+                    </div>
+                    
+                    <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn m-1 border-2 border-blue-400 bg-blue-400 text-white hover:bg-blue-500 hover:border-blue-500">{selectedPriceRange}</div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                             {["0-10", "10-20", "20-50", "50-100", "100-200", "200-300", "300-400", "400-500"].map((range) => (
                                 <li key={range}><a onClick={() => handleFilterChange(setPriceRangeFilter, range, 'Price Range')}>{`$${range.split('-')[0]} - $${range.split('-')[1]}`}</a></li>
                             ))}
                         </ul>
-                    </div> */}
+                    </div>
                 </div>
-                
+
                {/* Sorting */}
                 <div className="ml-6 lg:mr-56 lg:ml-0">
                     <select onChange={handleSortChange} value={sort} name='sort' id='sort' className='border-blue-400 border-2 p-2 rounded-lg'>
