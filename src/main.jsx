@@ -9,18 +9,18 @@ import Register from './component/Register/Register';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/root",
     element: <Root></Root>,
   },
-      {
-        path: '/login',
-        element: <Login></Login>,
-      },
-      {
-        path: '/register',
-        element: <Register></Register>,
-      },
-  
+  {
+    path: '/',
+    element: <Login></Login>,
+  },
+  {
+    path: '/register',
+    element: <Register></Register>,
+  },
+
 ]);
 
 

@@ -12,7 +12,7 @@ const Navbar = () => {
 </>
 
     return (
-        <div className='mx-auto'>
+        <div>
             <div className="navbar bg-blue-200 h-24">
                 <div className="navbar-start">
                         <img src={logo} alt="" className='h-20 ml-20'/>

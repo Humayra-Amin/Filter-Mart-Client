@@ -24,7 +24,7 @@ const Register = () => {
 
     const navigate = useNavigate();
 
-    const from = '/';
+    const from = '/root';
 
     const onSubmit = (data) => {
 
@@ -67,7 +67,7 @@ const Register = () => {
         <div>
             <div className="hero min-h-screen">
                 <div className="hero-content">
-                    <div className="card shrink-0 mb-14 md:w-[500px] lg:w-[500px] border-2 border-blue-400 shadow-xl rounded-none">
+                    <div className="card shrink-0 mb-14 md:w-[500px] lg:w-[500px] border-2 border-blue-400 shadow-xl rounded-none bg-blue-100">
 
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
 
@@ -79,7 +79,7 @@ const Register = () => {
                                 success && <p className="text-green-500 flex justify-center font-sedan">{success}</p>
                             }
 
-                            <h1 className="flex justify-center text-xl lg:text-5xl font-sedan text-blue-700">Register</h1>
+                            <h1 className="flex justify-center text-xl lg:text-3xl font-sedan text-blue-700">Register Here</h1>
 
                             <div className="form-control">
 

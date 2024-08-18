@@ -5,9 +5,9 @@ import { FaFacebook, FaInstagram,FaGoogle } from "react-icons/fa";
 const Footer = () => {
     return (
         <div>
-            <footer className="footer footer-center bg-blue-300 text-primary-content p-10">
+            <footer className="footer footer-center bg-blue-300 text-primary-content p-10 mt-8">
                 <aside>
-                <img src={logo} alt="" className='h-20'/>
+                <img src={logo} className='h-20'/>
 
                     <p className="font-bold text-black leading-9">
                         Filter Mart Ltd.

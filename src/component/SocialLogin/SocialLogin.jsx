@@ -10,7 +10,7 @@ const SocialLogin = () => {
     const location = useLocation();
     console.log(location);
 
-    const from = location?.state || "/";
+    const from = location?.state || "/root";
 
 
     const handleSocialLogin = socialProvider => {
@@ -28,7 +28,7 @@ const SocialLogin = () => {
 
             <div className="mt-6 text-2xl">
 
-                <h1 onClick={() => handleSocialLogin(googleLogin)} className="border-2 flex flex-row lg:flex-row md:flex-row justify-center items-center gap-10 p-1 rounded-md bg-blue-300 text-black border-blue-600 cursor-pointer"><FaGoogle></FaGoogle>Continue with Google</h1>
+                <h1 onClick={() => handleSocialLogin(googleLogin)} className="border-2 flex flex-row lg:flex-row md:flex-row justify-center products-center gap-10 p-1 rounded-md bg-blue-300 text-black border-blue-600 cursor-pointer"><FaGoogle></FaGoogle>Continue with Google</h1>
 
             </div>
 
